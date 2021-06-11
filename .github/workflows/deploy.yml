@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: user333-boop/VuePagesAction@1.0.0
+      uses: user333-boop/VuePagesAction@2.0.0
       with:
         username: 'user333-boop'
         reponame: 'genshin-gift-set-viewer'
