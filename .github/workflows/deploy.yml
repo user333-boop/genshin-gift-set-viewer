@@ -1,5 +1,8 @@
 name: Build Vue
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   build_vue:
     runs-on: ubuntu-latest
@@ -7,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: xRealNeon/VuePagesAction@1.0.0
+      uses: user333-boop/VuePagesAction@1.0.0
       with:
         username: 'user333-boop'
         reponame: 'genshin-gift-set-viewer'
